@@ -1,11 +1,11 @@
 <template>
     <MainLayouts :current-page="currentPage">
-        <h1>Home Page</h1>
+        <h1 class="">Home Page</h1>
     </MainLayouts>
 </template>
 
 <script setup>
-import MainLayouts from '../Layouts/MainLayouts.vue';
+import MainLayouts from '../layouts/MainLayout.vue';
 
 defineProps({
     currentPage: String,
