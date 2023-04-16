@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 Route::get('profile', [\App\Http\Controllers\HomeController::class, 'profile']);
+
+
+Route::prefix('admin')->group(function(){
+    Route::controller(LoginController::class)->group(function(){
+        Route::get('login', 'showLoginForm')->name('login');
+    });
+});
