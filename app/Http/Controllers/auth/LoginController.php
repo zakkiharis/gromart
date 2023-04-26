@@ -14,4 +14,10 @@ class LoginController extends Controller
             "title" => 'Grocery | Login'
         ]);
     }
+
+
+    public function login(Request $request)
+    {
+        
+    }
 }

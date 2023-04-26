@@ -17,6 +17,10 @@
     "dependencies": {
         "@inertiajs/vue3": "^1.0.2",
         "@vitejs/plugin-vue": "^4.1.0",
-        "lodash": "^4.17.21"
+        "@vuepic/vue-datepicker": "^4.4.0",
+        "@vueup/vue-quill": "^1.1.1",
+        "dayjs": "^1.11.7",
+        "lodash": "^4.17.21",
+        "notiwind": "^2.0.0"
     }
 }
